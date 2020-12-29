@@ -1,3 +1,4 @@
-import HelloWorld from './HelloWorld/HelloWorld';
+import ImageLoad from './ImageLoad/ImageLoad';
+import ImageLoadItem from './ImageLoadItem/ImageLoadItem';
 
-export default [HelloWorld];
+export default [ImageLoad, ImageLoadItem];

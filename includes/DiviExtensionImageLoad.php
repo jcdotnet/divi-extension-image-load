@@ -9,7 +9,7 @@ class DEIL_DiviExtensionImageLoad extends DiviExtension {
 	 *
 	 * @var string
 	 */
-	public $gettext_domain = 'deil-divi-extension-image-load';
+	public $gettext_domain = 'divi-extension-image-load';
 
 	/**
 	 * The extension's WP Plugin name.

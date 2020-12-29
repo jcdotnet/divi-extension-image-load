@@ -2,13 +2,13 @@
 /*
 Plugin Name: Image Load
 Plugin URI:  
-Description: create-divi-extension issues, ticket #431
+Description: Example plugin for create-divi-extension issues, ticket #431
 Version:     1.0.0
-Author:      
+Author:      JC
 Author URI:  
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: deil-divi-extension-image-load
+Text Domain: divi-extension-image-load
 Domain Path: /languages
 
 Image Load is free software: you can redistribute it and/or modify
