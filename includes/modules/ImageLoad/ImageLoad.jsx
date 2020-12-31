@@ -20,15 +20,16 @@ class ImageLoad extends Component {
 
   render() {
     console.log('PARENT RENDER');
- 
-    this.props.content.forEach(elem => { 
-        elem.props.attrs.update_parent = this._updateParent.bind(this);
-    });
+    if (Array.isArray(this.props.content) && (this.props.content.length > 0)) {
+      this.props.content.forEach(elem => { 
+          elem.props.attrs.update_parent = this._updateParent.bind(this);
+      });
+    }
 
     return (
       <Fragment>
         <h2>We need to hover over the sections so the images width are stored...</h2>
-        <div class="deil-images">
+        <div className="deil-images">
           { this.props.content }
         </div>
       </Fragment>

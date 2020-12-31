@@ -23,9 +23,10 @@ class ImageLoadItem extends Component {
   }
 
   _onImgLoad({target:img}) {
-    this.props.image_width = img.naturalWidth;
+    // this.props.image_width = img.naturalWidth;//lanre comment out
     //this.forceUpdate(); // updating the child does not work, so we send the value to the parent and update from there
-    this.props.update_parent(this.props);
+    const props = { ...this.props, ...{image_width:img.naturalWidth} };//lanre
+    this.props.update_parent(props);
   }
 
   render() {
