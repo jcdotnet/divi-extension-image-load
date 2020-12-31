@@ -2,7 +2,7 @@
 /*
 Plugin Name: Image Load
 Plugin URI:  
-Description: Example plugin for create-divi-extension issues, ticket #431
+Description: Example plugin for create-divi-extension, issue 431
 Version:     1.0.0
 Author:      JC
 Author URI:  
