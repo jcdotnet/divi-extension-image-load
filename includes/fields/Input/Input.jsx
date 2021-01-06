@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 // Internal Dependencies
 import './style.css';
 
-class Input extends Component {
+class DeilInput extends Component {
 
   static slug = 'deil_input';
 
@@ -26,10 +26,10 @@ class Input extends Component {
         type='text'
         className='deil-input'
         onChange={this._onChange}
-        placeholder='Your text here ...'
+        placeholder={this.props.fieldDefinition.deil_placeholder}
       />
     );
   }
 }
 
-export default Input;
+export default DeilInput;

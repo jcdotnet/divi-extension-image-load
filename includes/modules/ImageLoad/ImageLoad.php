@@ -20,6 +20,12 @@ class DEIL_ImageLoad extends ET_Builder_Module {
 
 	public function get_fields() {
 		return array(
+			'display' => array(
+				'label'     	=> esc_html__( 'Display', 'et_builder' ),
+				'type'        	=> 'select',
+				'options'		=> array('square', '4:3', '16:9', 'original'),
+				'default'  		=> 'original',
+			),
 		);
 	}
 

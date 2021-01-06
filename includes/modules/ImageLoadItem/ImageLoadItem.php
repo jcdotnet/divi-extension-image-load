@@ -33,6 +33,11 @@ class DEIL_HelloWorld extends ET_Builder_Module {
 				'choose_text'       => esc_attr__( 'Choose an Image', 'et_builder' ),
 				'update_text'       => esc_attr__( 'Set As Image', 'et_builder' ),
 			),
+			'image_display' => array(
+				'label'     		=> esc_html__( 'Display', 'et_builder' ),
+				'type'        		=> 'deil_input',
+				'deil_placeholder'	=> 'original', // here I want to pass to the custom field the value entered in the parent display field
+			),
 		);
 	}
 

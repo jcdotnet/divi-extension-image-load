@@ -1,3 +1,3 @@
-import Input from './Input/Input';
+import DeilInput from './Input/Input';
 
-export default [Input];
+export default [DeilInput];
