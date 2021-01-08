@@ -11,11 +11,14 @@ class ImageLoad extends Component {
 
   _updateParent(childProps) {
     this.props.content.forEach( (elem, i) => {
-      if (i === childProps.moduleInfo.order) {
+      const key = childProps.moduleInfo.type + '-' + elem.props.parent_address + '-' + childProps.moduleInfo.order + '-' + childProps.image_width;
+      if (i === childProps.moduleInfo.order && key !== elem.key) {
         elem.props.attrs.image_width = childProps.image_width;
+        elem.key = key;
+        console.log('Updating...');
+        this.forceUpdate();
       }
     });
-    this.forceUpdate(); // we actually change the component state, we are just forcing the update for testing purposes
   }
 
   render() {
